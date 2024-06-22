@@ -1,0 +1,9 @@
+import axios from "axios";
+
+export const pokeApi = axios.create({
+    baseURL: 'https://pokeapi.co/api/v2/',
+    headers: {
+        "Content-Type": "application/json",
+    },
+    timeout: 1000000,
+});
